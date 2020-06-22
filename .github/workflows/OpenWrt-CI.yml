@@ -43,6 +43,7 @@ jobs:
         run: |
           #rm -f ./.config*
           #touch ./.config
+          cp .config.x64 .config
           #
           # ========================固件定制部分========================
           # 
@@ -157,7 +158,6 @@ jobs:
           # 
           #sed -i 's/^[ \t]*//g' ./.config
          #make defconfig
-         cp .config.x64 .config
       - name: Make download
         run: |
           make download -j8
