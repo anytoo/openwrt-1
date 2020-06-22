@@ -156,8 +156,8 @@ jobs:
           # ========================固件定制部分结束========================
           # 
           #sed -i 's/^[ \t]*//g' ./.config
-          make defconfig
-         # cp .config.7621 .config
+         #make defconfig
+         cp .config.x64 .config
       - name: Make download
         run: |
           make download -j8
